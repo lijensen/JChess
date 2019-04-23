@@ -6,7 +6,6 @@ import com.chess.engine.board.Board;
 import com.chess.engine.board.Move;
 
 import java.util.Collection;
-import java.util.List;
 
 public abstract class Piece {
 
@@ -19,6 +18,10 @@ public abstract class Piece {
         this.piecePosition = piecePosition;
         //TODO more work here
         this.isFirstMove = false;
+    }
+
+    public int getPiecePosition(){
+        return this.piecePosition;
     }
 
     public Alliance getPieceAlliance(){
